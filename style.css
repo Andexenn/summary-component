@@ -1,0 +1,87 @@
+/** ================== precompute ==================== */
+@font-face {
+    font-family: 'Hanken';
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+:root{
+    --color-red: hsl(0, 100%, 67%);
+    --color-yellow: hsl(39, 100%, 56%);
+    --color-teal: hsl(166, 100%, 37%);
+    --color-blue: hsl(234, 85%, 45%);
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Hanken';
+}
+
+/** ================== common ==================== */
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: hsl(221, 100%, 96%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    width: (100% - 60px);
+    max-width: 600px;
+    min-height: 400px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    box-shadow: 1px 1px 50px 0.5px hsl(241, 100%, 89%);
+}
+
+/** ================== left ==================== */
+.left-content{
+    width: 50%;
+    background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    border-radius: 15px;
+}
+
+.left-content .top{
+    text-align: center;
+    color: hsl(221, 100%, 96%);
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+.overall{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    height: 170px;
+    width: 170px;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    color: hsl(221, 100%, 96%);
+    margin-top: 30px;
+}
+
+.overall span:first-child{
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.overall span:last-child{
+    opacity: 0.4;
+}
+
+.judge{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100px; */
+
+}
